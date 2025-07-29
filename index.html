@@ -1474,6 +1474,13 @@
                 dragLine.style.cursor = 'ew-resize';
             }
         }
+
+        // Initialize everything when page loads
+        window.addEventListener('DOMContentLoaded', function() {
+            // Initialize interactive chart
+            initializeChart();
+            setupDragFunctionality();
+            
             // Start counter animation after page load
             setTimeout(animateCounters, 500);
             
